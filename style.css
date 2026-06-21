@@ -1,0 +1,99 @@
+body{
+    font-family:Arial;
+    background:#eef3f8;
+}
+
+.container{
+    width:800px;
+    margin:auto;
+    background:white;
+    padding:20px;
+    margin-top:20px;
+    border-radius:10px;
+}
+
+.box{
+    margin-bottom:15px;
+}
+
+.hidden{
+    display:none;
+}
+
+label{
+    display:block;
+    margin:5px 0;
+}
+
+select,input{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+}
+
+button{
+    padding:12px 25px;
+    background:#007bff;
+    color:white;
+    border:none;
+    cursor:pointer;
+    margin-top:15px;
+}
+
+button:hover{
+    background:#0056d6;
+}
+
+#startBtn{
+    display:block;
+    margin:20px auto;
+    font-size:18px;
+}
+
+#timer{
+    color:red;
+    font-weight:bold;
+}
+
+.option{
+    display:block;
+    padding:8px;
+    background:#f1f5ff;
+    margin:5px 0;
+    border-radius:5px;
+}
+
+.correct{color:green;}
+.wrong{color:red;}
+#setup label{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:18px;
+    margin:10px 0;
+}
+
+/* Checkbox size fix */
+#setup input[type="checkbox"]{
+    width:18px;
+    height:18px;
+    transform: scale(1.3);
+    cursor:pointer;
+}
+#options .option{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:12px;
+    margin:10px 0;
+    font-size:18px;
+}
+
+/* Radio + checkbox size */
+#options input[type="radio"],
+#options input[type="checkbox"]{
+    width:18px;
+    height:18px;
+    transform: scale(1.2);
+    cursor:pointer;
+}
