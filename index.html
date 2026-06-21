@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Quiz Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- SETUP SCREEN -->
+    <div id="setup">
+
+        <h1>Quiz Settings</h1>
+
+        <div class="box">
+            <h3>Question Types</h3>
+            <label><input type="checkbox" value="single" checked> Single Choice</label>
+            <label><input type="checkbox" value="multiple" checked> Multiple Choice</label>
+            <label><input type="checkbox" value="fill" checked> Fill in the Blank</label>
+        </div>
+
+        <div class="box">
+            <h3>Number of Questions</h3>
+            <select id="qCount">
+                <option value="3">3</option>
+                <option value="5" selected>5</option>
+                <option value="10">10</option>
+                <option value="custom">Custom</option>
+            </select>
+            <input type="number" id="qCustom" class="hidden" placeholder="Enter number">
+        </div>
+
+        <div class="box">
+            <h3>Time Limit</h3>
+            <select id="tLimit">
+                <option value="0">No Time Limit</option>
+                <option value="1">1 Min</option>
+                <option value="2">2 Min</option>
+                <option value="5">5 Min</option>
+                <option value="custom">Custom</option>
+            </select>
+            <input type="number" id="tCustom" class="hidden" placeholder="Minutes">
+        </div>
+
+        <div class="box">
+            <h3>Points Per Question</h3>
+            <select id="pPoints">
+                <option value="1">1</option>
+                <option value="5">5</option>
+                <option value="10" selected>10</option>
+                <option value="20">20</option>
+                <option value="custom">Custom</option>
+            </select>
+            <input type="number" id="pCustom" class="hidden" placeholder="Points">
+        </div>
+
+        <button id="startBtn">Start Quiz</button>
+
+    </div>
+
+    <!-- QUIZ -->
+    <div id="quiz" class="hidden">
+
+        <div id="timer"></div>
+        <h2 id="question"></h2>
+        <div id="note"></div>
+
+        <div id="options"></div>
+        <input type="text" id="fill" class="hidden">
+
+        <button id="nextBtn">Next</button>
+
+    </div>
+
+    <!-- RESULT -->
+    <div id="result" class="hidden"></div>
+
+</div>
+
+<script src="questions.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
